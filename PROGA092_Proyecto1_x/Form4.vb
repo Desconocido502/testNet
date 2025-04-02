@@ -1,6 +1,8 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class Form4
+    ' Variable para almacenar el formulario inicial
+    Public formularioAnterior As Form
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Parámetros de la conexión a la base de datos
         Dim server = "localhost"
@@ -328,4 +330,28 @@ Public Class Form4
             End Using
         End If
     End Sub
+
+    Private Sub btnCreateUser_Click(sender As Object, e As EventArgs) Handles btnCreateUser.Click
+        ' Crear una nueva instancia de Form3
+        Dim form3 As New Form3()
+        form3.formularioAnterior = Me  ' Establece Form1 como el formulario anterior
+        ' Mostrar Form3
+        form3.Show()
+        ' Cerrar el formulario actual (Form1)
+        Me.Hide()
+    End Sub
+
+    Private Sub btn_cancel_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
+        ' Cerrar el formulario actual (Form4)
+        Me.Close()
+
+        ' Mostrar Form1 si se ha ocultado
+        For Each form As Form In Application.OpenForms
+            If TypeOf form Is Form2 Then
+                form.Show()
+                Exit For
+            End If
+        Next
+    End Sub
+
 End Class

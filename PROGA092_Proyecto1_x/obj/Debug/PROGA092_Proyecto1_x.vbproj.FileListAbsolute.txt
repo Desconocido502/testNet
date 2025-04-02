@@ -15,6 +15,7 @@ C:\Users\carlo\OneDrive\Documentos\Visual Studio 2015\Projects\PROGA092_Proyecto
 C:\Users\carlo\OneDrive\Documentos\Visual Studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.Form2.resources
 C:\Users\carlo\OneDrive\Documentos\Visual Studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.Form3.resources
 C:\Users\carlo\OneDrive\Documentos\Visual Studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.Form4.resources
-C:\Users\carlo\OneDrive\Documentos\Visual Studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.vbproj.AssemblyReference.cache
-C:\Users\carlo\OneDrive\Documentos\Visual Studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.vbproj.CoreCompileInputs.cache
-C:\Users\carlo\OneDrive\Documentos\Visual Studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092.E9230A00.Up2Date
+C:\Users\carlo\OneDrive\Documentos\Visual Studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.vbprojResolveAssemblyReference.cache
+C:\Users\carlo\OneDrive\Documentos\Visual Studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.Form5.resources
+C:\Users\carlo\OneDrive\Documentos\Visual Studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.Form6.resources
+C:\Users\carlo\OneDrive\Documentos\Visual Studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.Form7.resources

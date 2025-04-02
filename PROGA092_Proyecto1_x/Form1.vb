@@ -89,19 +89,22 @@ Public Class Form1
                             Dim tipoUsuario As String = reader.GetString(1) ' Obtener el TipoUsuario
 
                             If tipoUsuario = "admin" Then
-                                ' Si el tipo de usuario es 1 (por ejemplo, administrador), puedes realizar una acción específica
+                                ' Si el tipo de usuario es admin
                                 MsgBox("Bienvenido, Administrador.", MsgBoxStyle.Information, "Login Exitoso")
-                                ' Cargar un formulario o realizar alguna acción específica para administradores
-                                ' Determinar acción según el tipo de usuario
+                                ' Cargar el formulario adecuado para el admin
                                 Dim form2 As New Form2()
-
-                                ' Mostrar el formulario adecuado
                                 form2.Show()
                             ElseIf tipoUsuario = "user" Then
-                                ' Para otros tipos de usuarios
-                                MsgBox($"Inicio de sesión exitoso. {idUsuario}", MsgBoxStyle.Information, "Login turistico Exitoso")
-
+                                ' Si el tipo de usuario es user
+                                MsgBox($"Inicio de sesión exitoso. {idUsuario}", MsgBoxStyle.Information, "Login Exitoso")
+                                ' Cargar el formulario adecuado para el user
+                                Dim form3 As New Form3()
+                                form3.Show()
                             End If
+
+                            ' Ocultar el formulario de login para que no se quede abierto
+                            Me.Hide()
+
                         Else
                             ' Si no hay coincidencias, el usuario no existe o la contraseña es incorrecta
                             MsgBox("Usuario o contraseña incorrectos.", MsgBoxStyle.Critical, "Login Fallido")
@@ -113,10 +116,9 @@ Public Class Form1
             ' Si ocurre un error, mostrar el mensaje
             MsgBox("Error de conexión: " & ex.Message, MsgBoxStyle.Critical, "Error")
         End Try
-
-
     End Sub
 End Class
+
 
 'INSERT INTO Usuario (nombre, username, date_nac, email, password_, tipo_user) 
 ''VALUES('Administrador', 'admin', '1990-01-01', 'admin@example.com', 'admin123', 'admin');
