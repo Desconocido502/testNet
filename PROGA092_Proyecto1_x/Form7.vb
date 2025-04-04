@@ -1,6 +1,8 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class Form7
+    ' Variable para almacenar el formulario inicial
+    Public formularioAnterior As Form
     Private Sub Form7_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Parámetros de la conexión a la base de datos
         Dim server = "localhost"
@@ -40,13 +42,26 @@ Public Class Form7
         End Using
     End Sub
 
-    Private Sub btn_cancel_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
+    Private Sub btn_cancel_Click(sender As Object, e As EventArgs)
         ' Cerrar el formulario actual (Form7)
         Me.Close()
 
         ' Mostrar Form1 si se ha ocultado
         For Each form As Form In Application.OpenForms
             If TypeOf form Is Form5 Then
+                form.Show()
+                Exit For
+            End If
+        Next
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ' Cerrar el formulario actual (Form7)
+        Me.Close()
+
+        ' Mostrar Form1 si se ha ocultado
+        For Each form As Form In Application.OpenForms
+            If TypeOf form Is Form8 Then
                 form.Show()
                 Exit For
             End If

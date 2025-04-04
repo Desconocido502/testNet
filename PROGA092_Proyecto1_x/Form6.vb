@@ -1,5 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Form6
+    ' Variable para almacenar el formulario inicial
+    Public formularioAnterior As Form
     Private Sub btn_cancel_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
         ' Cerrar el formulario actual (Form4)
         Me.Close()
@@ -298,4 +300,15 @@ Public Class Form6
         End If
     End Sub
 
+    Private Sub btnCreateVG_Click(sender As Object, e As EventArgs) Handles btnCreateVG.Click
+        'Se cierra la ventana actual
+        Me.Hide()
+
+        MsgBox("DLC's", MsgBoxStyle.Information, "DLC")
+        ' vamos al form de CREAR VideoJuego
+        Dim form9 As New Form9()
+
+        ' Mostrar el formulario adecuado
+        form9.Show()
+    End Sub
 End Class

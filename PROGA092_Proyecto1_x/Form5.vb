@@ -22,7 +22,7 @@
         'Se cierra la ventana actual
         Me.Hide()
 
-        MsgBox("DashBoard Usuarios.", MsgBoxStyle.Information, "Usuarios")
+        MsgBox("DashBoard Videojuegos.", MsgBoxStyle.Information, "Videojuegos")
         ' vamos al form de dashboard videojuegos
         Dim form6 As New Form6()
 
@@ -36,9 +36,9 @@
 
         MsgBox("DLC's", MsgBoxStyle.Information, "DLC")
         ' vamos al form de CREAR DLC
-        Dim form7 As New Form7()
+        Dim form8 As New Form8()
 
         ' Mostrar el formulario adecuado
-        form7.Show()
+        form8.Show()
     End Sub
 End Class
