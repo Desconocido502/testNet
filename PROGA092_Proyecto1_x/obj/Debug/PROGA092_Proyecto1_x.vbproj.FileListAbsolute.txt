@@ -21,3 +21,8 @@ C:\Users\carlo\OneDrive\Documentos\Visual Studio 2015\Projects\PROGA092_Proyecto
 C:\Users\carlo\OneDrive\Documentos\Visual Studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.Form7.resources
 C:\Users\carlo\onedrive\documentos\visual studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.Form8.resources
 C:\Users\carlo\onedrive\documentos\visual studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.Form9.resources
+C:\Users\carlo\onedrive\documentos\visual studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.Form10.resources
+C:\Users\carlo\onedrive\documentos\visual studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.Form11.resources
+C:\Users\carlo\onedrive\documentos\visual studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.Form12.resources
+C:\Users\carlo\onedrive\documentos\visual studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.Form13.resources
+C:\Users\carlo\onedrive\documentos\visual studio 2015\Projects\PROGA092_Proyecto1_x\PROGA092_Proyecto1_x\obj\Debug\PROGA092_Proyecto1_x.Form14.resources

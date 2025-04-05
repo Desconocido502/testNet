@@ -69,54 +69,51 @@ Public Class Form1
         Dim cadenaConexion = "server=" & server & ";user=" & user & ";pwd=" & pwd & ";database=" & database & ";SslMode=none"
 
         Try
-            ' Conectar a la base de datos
             Using myCon As New MySqlConnection(cadenaConexion)
                 myCon.Open()
-                ' Consulta para verificar si el usuario existe y obtener su tipo
-                Dim query As String = "SELECT idUsuario, tipo_user FROM usuario WHERE (email = @cu OR username = @cu) AND password_ = @password"
+
+                Dim query As String = "SELECT idUsuario, tipo_user, username FROM usuario WHERE (email = @cu OR username = @cu) AND password_ = @password"
                 Using cmd As New MySqlCommand(query, myCon)
-                    ' Agregar parámetros para evitar SQL injection
                     cmd.Parameters.AddWithValue("@cu", cu)
                     cmd.Parameters.AddWithValue("@password", password)
 
-                    ' Ejecutar la consulta
                     Using reader As MySqlDataReader = cmd.ExecuteReader()
                         If reader.HasRows Then
-                            ' Leer el tipo de usuario
                             reader.Read()
 
-                            Dim idUsuario As Integer = reader.GetInt32(0) ' Obtener el ID del usuario
-                            Dim tipoUsuario As String = reader.GetString(1) ' Obtener el TipoUsuario
+                            Dim idUsuario As Integer = reader.GetInt32(0)
+                            Dim tipoUsuario As String = reader.GetString(1)
+                            Dim username As String = reader.GetString(2)
+
+                            ' Limpiar inputs
+                            txtBoxCU.Text = "Correo o Usuario"
+                            txtBoxCU.ForeColor = Color.Gray
+                            txtBoxPassword.Text = "Contraseña"
+                            txtBoxPassword.ForeColor = Color.Gray
 
                             If tipoUsuario = "admin" Then
-                                ' Si el tipo de usuario es admin
                                 MsgBox("Bienvenido, Administrador.", MsgBoxStyle.Information, "Login Exitoso")
-                                ' Cargar el formulario adecuado para el admin
                                 Dim form2 As New Form2()
                                 form2.Show()
                             ElseIf tipoUsuario = "user" Then
-                                ' Si el tipo de usuario es user
-                                MsgBox($"Inicio de sesión exitoso. {idUsuario}", MsgBoxStyle.Information, "Login Exitoso")
-                                ' Cargar el formulario adecuado para el user
-                                Dim form3 As New Form3()
-                                form3.Show()
+                                MsgBox($"Inicio de sesión exitoso. {username}", MsgBoxStyle.Information, "Login Exitoso")
+                                Dim form10 As New Form10()
+                                form10.idUsuario = idUsuario
+                                form10.Show()
                             End If
 
-                            ' Ocultar el formulario de login para que no se quede abierto
                             Me.Hide()
-
                         Else
-                            ' Si no hay coincidencias, el usuario no existe o la contraseña es incorrecta
                             MsgBox("Usuario o contraseña incorrectos.", MsgBoxStyle.Critical, "Login Fallido")
                         End If
                     End Using
                 End Using
             End Using
         Catch ex As Exception
-            ' Si ocurre un error, mostrar el mensaje
             MsgBox("Error de conexión: " & ex.Message, MsgBoxStyle.Critical, "Error")
         End Try
     End Sub
+
 End Class
 
 

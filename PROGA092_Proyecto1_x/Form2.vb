@@ -3,7 +3,7 @@ Public Class Form2
     ' Variable para almacenar el formulario inicial
     Public formularioAnterior As Form
     Private Sub btn_return_login_Click(sender As Object, e As EventArgs) Handles btn_return_login.Click
-        ' Cerrar el formulario actual (Form3)
+        ' Cerrar el formulario actual (Form2)
         Me.Close()
 
         ' Mostrar Form1 si se ha ocultado
