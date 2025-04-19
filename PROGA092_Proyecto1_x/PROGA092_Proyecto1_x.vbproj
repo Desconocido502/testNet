@@ -68,6 +68,7 @@
     <Reference Include="System.Management" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -123,6 +124,12 @@
       <DependentUpon>Form14.vb</DependentUpon>
     </Compile>
     <Compile Include="Form14.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form15.Designer.vb">
+      <DependentUpon>Form15.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form15.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form2.Designer.vb">
@@ -208,6 +215,9 @@
     <EmbeddedResource Include="Form14.resx">
       <DependentUpon>Form14.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form15.resx">
+      <DependentUpon>Form15.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
@@ -272,6 +282,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DLL\DLL.sql" />
+    <None Include="Resources\report.png" />
     <None Include="Resources\HistorialVidegoGames.png" />
     <None Include="Resources\myReviews.png" />
     <None Include="Resources\updateAccount.png" />

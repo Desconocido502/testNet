@@ -3,12 +3,12 @@ Public Class Form6
     ' Variable para almacenar el formulario inicial
     Public formularioAnterior As Form
     Private Sub btn_cancel_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
-        ' Cerrar el formulario actual (Form4)
+        ' Cerrar el formulario actual (Form5)
         Me.Close()
 
         ' Mostrar Form1 si se ha ocultado
         For Each form As Form In Application.OpenForms
-            If TypeOf form Is Form2 Then
+            If TypeOf form Is Form5 Then
                 form.Show()
                 Exit For
             End If
@@ -275,6 +275,9 @@ Public Class Form6
 
         ' Mostrar el formulario
         formEditar.ShowDialog()
+
+        ' Recargar los datos
+        CargarVideojuegos("server=localhost;user=Root;pwd=root;database=VideojuegosDB;SslMode=none")
     End Sub
 
     ' Método para eliminar videojuego
@@ -297,6 +300,8 @@ Public Class Form6
                 ' Mensaje de éxito
                 MsgBox("Videojuego eliminado correctamente.", MsgBoxStyle.Information, "Eliminación Exitosa")
             End Using
+            ' Recargar los datos
+            CargarVideojuegos("server=localhost;user=Root;pwd=root;database=VideojuegosDB;SslMode=none")
         End If
     End Sub
 

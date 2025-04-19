@@ -33,12 +33,12 @@ Partial Class Form11
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txt_box_names = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.btn_register = New System.Windows.Forms.Button()
+        Me.btn_update = New System.Windows.Forms.Button()
         Me.txt_box_new_password = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txt_box_password = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnDeleteAccount = New System.Windows.Forms.Button()
         Me.btn_cancel = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -141,17 +141,17 @@ Partial Class Form11
         Me.Label7.TabIndex = 38
         Me.Label7.Text = "Nombre Completo"
         '
-        'btn_register
+        'btn_update
         '
-        Me.btn_register.BackColor = System.Drawing.Color.Navy
-        Me.btn_register.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_register.ForeColor = System.Drawing.Color.White
-        Me.btn_register.Location = New System.Drawing.Point(1059, 441)
-        Me.btn_register.Name = "btn_register"
-        Me.btn_register.Size = New System.Drawing.Size(126, 51)
-        Me.btn_register.TabIndex = 37
-        Me.btn_register.Text = "Actualizar"
-        Me.btn_register.UseVisualStyleBackColor = False
+        Me.btn_update.BackColor = System.Drawing.Color.Navy
+        Me.btn_update.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_update.ForeColor = System.Drawing.Color.White
+        Me.btn_update.Location = New System.Drawing.Point(1059, 441)
+        Me.btn_update.Name = "btn_update"
+        Me.btn_update.Size = New System.Drawing.Size(126, 51)
+        Me.btn_update.TabIndex = 37
+        Me.btn_update.Text = "Actualizar"
+        Me.btn_update.UseVisualStyleBackColor = False
         '
         'txt_box_new_password
         '
@@ -189,17 +189,17 @@ Partial Class Form11
         Me.txt_box_password.Size = New System.Drawing.Size(329, 30)
         Me.txt_box_password.TabIndex = 49
         '
-        'Button1
+        'btnDeleteAccount
         '
-        Me.Button1.BackColor = System.Drawing.Color.DarkMagenta
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(962, 41)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(223, 51)
-        Me.Button1.TabIndex = 53
-        Me.Button1.Text = "¿Eliminar Cuenta?"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnDeleteAccount.BackColor = System.Drawing.Color.DarkMagenta
+        Me.btnDeleteAccount.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDeleteAccount.ForeColor = System.Drawing.Color.White
+        Me.btnDeleteAccount.Location = New System.Drawing.Point(962, 41)
+        Me.btnDeleteAccount.Name = "btnDeleteAccount"
+        Me.btnDeleteAccount.Size = New System.Drawing.Size(223, 51)
+        Me.btnDeleteAccount.TabIndex = 53
+        Me.btnDeleteAccount.Text = "¿Eliminar Cuenta?"
+        Me.btnDeleteAccount.UseVisualStyleBackColor = False
         '
         'btn_cancel
         '
@@ -219,7 +219,7 @@ Partial Class Form11
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1214, 546)
         Me.Controls.Add(Me.btn_cancel)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnDeleteAccount)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_box_new_password)
         Me.Controls.Add(Me.Label6)
@@ -235,7 +235,7 @@ Partial Class Form11
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.txt_box_names)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.btn_register)
+        Me.Controls.Add(Me.btn_update)
         Me.Name = "Form11"
         Me.Text = "Actualizar/Eliminar Cuenta"
         Me.ResumeLayout(False)
@@ -254,11 +254,11 @@ Partial Class Form11
     Friend WithEvents Label8 As Label
     Friend WithEvents txt_box_names As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents btn_register As Button
+    Friend WithEvents btn_update As Button
     Friend WithEvents txt_box_new_password As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents txt_box_password As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnDeleteAccount As Button
     Friend WithEvents btn_cancel As Button
 End Class

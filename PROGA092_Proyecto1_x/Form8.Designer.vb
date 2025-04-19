@@ -33,7 +33,7 @@ Partial Class Form8
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(319, 39)
+        Me.Label1.Location = New System.Drawing.Point(343, 48)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(290, 38)
         Me.Label1.TabIndex = 38
@@ -56,7 +56,7 @@ Partial Class Form8
         Me.btnCreateVG.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btnCreateVG.BackColor = System.Drawing.Color.NavajoWhite
         Me.btnCreateVG.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCreateVG.Location = New System.Drawing.Point(847, 92)
+        Me.btnCreateVG.Location = New System.Drawing.Point(769, 92)
         Me.btnCreateVG.Name = "btnCreateVG"
         Me.btnCreateVG.Size = New System.Drawing.Size(126, 51)
         Me.btnCreateVG.TabIndex = 39
@@ -67,17 +67,17 @@ Partial Class Form8
         '
         Me.DataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 149)
+        Me.DataGridView1.Location = New System.Drawing.Point(-27, 149)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(961, 380)
+        Me.DataGridView1.Size = New System.Drawing.Size(922, 380)
         Me.DataGridView1.TabIndex = 41
         '
         'Form8
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(985, 541)
+        Me.ClientSize = New System.Drawing.Size(907, 541)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.btnCreateVG)

@@ -24,7 +24,6 @@ Partial Class Form13
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_cancel = New System.Windows.Forms.Button()
-        Me.btnCreateUser = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -33,7 +32,7 @@ Partial Class Form13
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(374, 36)
+        Me.Label1.Location = New System.Drawing.Point(407, 36)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(282, 38)
         Me.Label1.TabIndex = 41
@@ -50,18 +49,6 @@ Partial Class Form13
         Me.btn_cancel.TabIndex = 40
         Me.btn_cancel.Text = "Regresar"
         Me.btn_cancel.UseVisualStyleBackColor = False
-        '
-        'btnCreateUser
-        '
-        Me.btnCreateUser.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnCreateUser.BackColor = System.Drawing.Color.NavajoWhite
-        Me.btnCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCreateUser.Location = New System.Drawing.Point(913, 49)
-        Me.btnCreateUser.Name = "btnCreateUser"
-        Me.btnCreateUser.Size = New System.Drawing.Size(126, 51)
-        Me.btnCreateUser.TabIndex = 39
-        Me.btnCreateUser.Text = "Crear nuevo reseña"
-        Me.btnCreateUser.UseVisualStyleBackColor = False
         '
         'DataGridView1
         '
@@ -80,7 +67,6 @@ Partial Class Form13
         Me.ClientSize = New System.Drawing.Size(1070, 545)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btn_cancel)
-        Me.Controls.Add(Me.btnCreateUser)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "Form13"
         Me.Text = "Mis Reseñas"
@@ -92,6 +78,5 @@ Partial Class Form13
 
     Friend WithEvents Label1 As Label
     Friend WithEvents btn_cancel As Button
-    Friend WithEvents btnCreateUser As Button
     Friend WithEvents DataGridView1 As DataGridView
 End Class

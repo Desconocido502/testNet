@@ -26,15 +26,14 @@ Partial Class Form12
         Me.CBVG = New System.Windows.Forms.ComboBox()
         Me.btn_cancel = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.CBDLC = New System.Windows.Forms.ComboBox()
-        Me.txt_box_names = New System.Windows.Forms.TextBox()
+        Me.txt_box_nit = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txt_box_pay = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btn_register = New System.Windows.Forms.Button()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txt_box_comment = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.chkDlc = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'Label4
@@ -78,32 +77,13 @@ Partial Class Form12
         Me.Label1.TabIndex = 55
         Me.Label1.Text = "Comprar VideoJuegos"
         '
-        'Label2
+        'txt_box_nit
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(374, 97)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(57, 20)
-        Me.Label2.TabIndex = 58
-        Me.Label2.Text = "DLC's"
-        '
-        'CBDLC
-        '
-        Me.CBDLC.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CBDLC.FormattingEnabled = True
-        Me.CBDLC.Location = New System.Drawing.Point(378, 145)
-        Me.CBDLC.Name = "CBDLC"
-        Me.CBDLC.Size = New System.Drawing.Size(226, 28)
-        Me.CBDLC.TabIndex = 57
-        '
-        'txt_box_names
-        '
-        Me.txt_box_names.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_box_names.Location = New System.Drawing.Point(58, 249)
-        Me.txt_box_names.Name = "txt_box_names"
-        Me.txt_box_names.Size = New System.Drawing.Size(226, 27)
-        Me.txt_box_names.TabIndex = 60
+        Me.txt_box_nit.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_box_nit.Location = New System.Drawing.Point(58, 249)
+        Me.txt_box_nit.Name = "txt_box_nit"
+        Me.txt_box_nit.Size = New System.Drawing.Size(226, 27)
+        Me.txt_box_nit.TabIndex = 60
         '
         'Label7
         '
@@ -115,13 +95,13 @@ Partial Class Form12
         Me.Label7.TabIndex = 59
         Me.Label7.Text = "NIT"
         '
-        'TextBox1
+        'txt_box_pay
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(378, 249)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(226, 27)
-        Me.TextBox1.TabIndex = 62
+        Me.txt_box_pay.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_box_pay.Location = New System.Drawing.Point(378, 249)
+        Me.txt_box_pay.Name = "txt_box_pay"
+        Me.txt_box_pay.Size = New System.Drawing.Size(226, 27)
+        Me.txt_box_pay.TabIndex = 62
         '
         'Label3
         '
@@ -145,13 +125,13 @@ Partial Class Form12
         Me.btn_register.Text = "Registrar"
         Me.btn_register.UseVisualStyleBackColor = False
         '
-        'TextBox2
+        'txt_box_comment
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(58, 350)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(546, 27)
-        Me.TextBox2.TabIndex = 65
+        Me.txt_box_comment.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_box_comment.Location = New System.Drawing.Point(58, 350)
+        Me.txt_box_comment.Name = "txt_box_comment"
+        Me.txt_box_comment.Size = New System.Drawing.Size(546, 27)
+        Me.txt_box_comment.TabIndex = 65
         '
         'Label5
         '
@@ -163,20 +143,29 @@ Partial Class Form12
         Me.Label5.TabIndex = 64
         Me.Label5.Text = "Comentario"
         '
+        'chkDlc
+        '
+        Me.chkDlc.AutoSize = True
+        Me.chkDlc.Location = New System.Drawing.Point(387, 145)
+        Me.chkDlc.Name = "chkDlc"
+        Me.chkDlc.Size = New System.Drawing.Size(98, 21)
+        Me.chkDlc.TabIndex = 66
+        Me.chkDlc.Text = "Incluir DLC"
+        Me.chkDlc.UseVisualStyleBackColor = True
+        '
         'Form12
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(655, 488)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.chkDlc)
+        Me.Controls.Add(Me.txt_box_comment)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btn_register)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txt_box_pay)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.txt_box_names)
+        Me.Controls.Add(Me.txt_box_nit)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.CBDLC)
         Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label4)
@@ -192,13 +181,12 @@ Partial Class Form12
     Friend WithEvents CBVG As ComboBox
     Friend WithEvents btn_cancel As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents CBDLC As ComboBox
-    Friend WithEvents txt_box_names As TextBox
+    Friend WithEvents txt_box_nit As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txt_box_pay As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents btn_register As Button
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txt_box_comment As TextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents chkDlc As CheckBox
 End Class

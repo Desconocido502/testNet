@@ -27,16 +27,21 @@ Partial Class Form2
         Me.btnConexion = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.PBGames = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.PBUsers = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PBUsers = New System.Windows.Forms.PictureBox()
+        Me.PBGames = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
-        CType(Me.PBGames, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBUsers, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBGames, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -78,7 +83,7 @@ Partial Class Form2
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.PBGames)
-        Me.Panel1.Location = New System.Drawing.Point(587, 196)
+        Me.Panel1.Location = New System.Drawing.Point(477, 195)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(200, 136)
         Me.Panel1.TabIndex = 13
@@ -93,22 +98,12 @@ Partial Class Form2
         Me.Label2.TabIndex = 14
         Me.Label2.Text = "Juegos"
         '
-        'PBGames
-        '
-        Me.PBGames.Image = Global.PROGA092_Proyecto1_x.My.Resources.Resources.games
-        Me.PBGames.Location = New System.Drawing.Point(66, 12)
-        Me.PBGames.Name = "PBGames"
-        Me.PBGames.Size = New System.Drawing.Size(64, 64)
-        Me.PBGames.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PBGames.TabIndex = 12
-        Me.PBGames.TabStop = False
-        '
         'Panel2
         '
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.PBUsers)
-        Me.Panel2.Location = New System.Drawing.Point(321, 196)
+        Me.Panel2.Location = New System.Drawing.Point(211, 195)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(200, 136)
         Me.Panel2.TabIndex = 15
@@ -122,16 +117,6 @@ Partial Class Form2
         Me.Label3.Size = New System.Drawing.Size(127, 32)
         Me.Label3.TabIndex = 14
         Me.Label3.Text = "Usuarios"
-        '
-        'PBUsers
-        '
-        Me.PBUsers.Image = Global.PROGA092_Proyecto1_x.My.Resources.Resources.users
-        Me.PBUsers.Location = New System.Drawing.Point(66, 12)
-        Me.PBUsers.Name = "PBUsers"
-        Me.PBUsers.Size = New System.Drawing.Size(64, 64)
-        Me.PBUsers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PBUsers.TabIndex = 12
-        Me.PBUsers.TabStop = False
         '
         'Label4
         '
@@ -153,11 +138,62 @@ Partial Class Form2
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Registralo!"
         '
+        'Panel3
+        '
+        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Controls.Add(Me.Label5)
+        Me.Panel3.Controls.Add(Me.PictureBox1)
+        Me.Panel3.Location = New System.Drawing.Point(736, 195)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(200, 136)
+        Me.Panel3.TabIndex = 17
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(39, 91)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(130, 32)
+        Me.Label5.TabIndex = 14
+        Me.Label5.Text = "Reportes"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.PROGA092_Proyecto1_x.My.Resources.Resources.report
+        Me.PictureBox1.Location = New System.Drawing.Point(66, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(64, 64)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 12
+        Me.PictureBox1.TabStop = False
+        '
+        'PBUsers
+        '
+        Me.PBUsers.Image = Global.PROGA092_Proyecto1_x.My.Resources.Resources.users
+        Me.PBUsers.Location = New System.Drawing.Point(66, 12)
+        Me.PBUsers.Name = "PBUsers"
+        Me.PBUsers.Size = New System.Drawing.Size(64, 64)
+        Me.PBUsers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBUsers.TabIndex = 12
+        Me.PBUsers.TabStop = False
+        '
+        'PBGames
+        '
+        Me.PBGames.Image = Global.PROGA092_Proyecto1_x.My.Resources.Resources.games
+        Me.PBGames.Location = New System.Drawing.Point(66, 12)
+        Me.PBGames.Name = "PBGames"
+        Me.PBGames.Size = New System.Drawing.Size(64, 64)
+        Me.PBGames.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBGames.TabIndex = 12
+        Me.PBGames.TabStop = False
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1108, 532)
+        Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Panel2)
@@ -169,10 +205,13 @@ Partial Class Form2
         Me.Text = "Administrador"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PBGames, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBUsers, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBGames, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -189,4 +228,7 @@ Partial Class Form2
     Friend WithEvents PBUsers As PictureBox
     Friend WithEvents Label4 As Label
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Label5 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

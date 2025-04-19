@@ -42,15 +42,3 @@ CREATE TABLE Compra (
     FOREIGN KEY (Usuario_idUsuario) REFERENCES Usuario(idUsuario),
     FOREIGN KEY (VideoJuego_idVideoJuego) REFERENCES VideoJuego(idVideoJuego)
 );
-
-CREATE TABLE review (
-    idReview INT PRIMARY KEY AUTO_INCREMENT,
-    comentario TEXT NOT NULL,
-    fecha_review DATETIME NOT NULL,
-    usuario_id INT NOT NULL,
-    videojuego_id INT NOT NULL,
-    dlc_id INT, -- puede ser NULL si no aplica
-    FOREIGN KEY (usuario_id) REFERENCES Usuario(idUsuario),
-    FOREIGN KEY (videojuego_id) REFERENCES VideoJuego(idVideoJuego),
-    FOREIGN KEY (dlc_id) REFERENCES DLC(idDLC)
-);

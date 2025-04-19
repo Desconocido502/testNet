@@ -72,4 +72,16 @@ Public Class Form2
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        'Se cierra la ventana actual
+        Me.Hide()
+
+        MsgBox("DashBoard Reportes.", MsgBoxStyle.Information, "Reportes")
+        ' vamos al form de dashboard reportes
+        Dim form15 As New Form15()
+
+        ' Mostrar el formulario adecuado
+        form15.Show()
+    End Sub
 End Class

@@ -28,7 +28,7 @@ Partial Class Form7
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txt_box_price = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txt_box_year = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btn_register = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -57,7 +57,7 @@ Partial Class Form7
         Me.txt_box_name.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_box_name.Location = New System.Drawing.Point(279, 66)
         Me.txt_box_name.Name = "txt_box_name"
-        Me.txt_box_name.Size = New System.Drawing.Size(281, 30)
+        Me.txt_box_name.Size = New System.Drawing.Size(202, 30)
         Me.txt_box_name.TabIndex = 42
         '
         'Label7
@@ -88,13 +88,13 @@ Partial Class Form7
         Me.Label1.TabIndex = 43
         Me.Label1.Text = "Precio"
         '
-        'TextBox1
+        'txt_box_year
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(279, 156)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(202, 30)
-        Me.TextBox1.TabIndex = 46
+        Me.txt_box_year.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_box_year.Location = New System.Drawing.Point(279, 156)
+        Me.txt_box_year.Name = "txt_box_year"
+        Me.txt_box_year.Size = New System.Drawing.Size(202, 30)
+        Me.txt_box_year.TabIndex = 46
         '
         'Label2
         '
@@ -137,7 +137,7 @@ Partial Class Form7
         Me.ClientSize = New System.Drawing.Size(605, 326)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btn_register)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txt_box_year)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txt_box_price)
         Me.Controls.Add(Me.Label1)
@@ -158,7 +158,7 @@ Partial Class Form7
     Friend WithEvents Label7 As Label
     Friend WithEvents txt_box_price As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txt_box_year As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents btn_register As Button
     Friend WithEvents Button1 As Button

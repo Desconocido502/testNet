@@ -28,12 +28,12 @@ Partial Class Form9
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtBoxPrice = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtBoxCategory = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtBoxName = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtBoxED = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.cb_category = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Button1
@@ -96,14 +96,6 @@ Partial Class Form9
         Me.Label1.TabIndex = 53
         Me.Label1.Text = "Precio"
         '
-        'txtBoxCategory
-        '
-        Me.txtBoxCategory.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBoxCategory.Location = New System.Drawing.Point(394, 92)
-        Me.txtBoxCategory.Name = "txtBoxCategory"
-        Me.txtBoxCategory.Size = New System.Drawing.Size(281, 30)
-        Me.txtBoxCategory.TabIndex = 52
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -150,11 +142,20 @@ Partial Class Form9
         Me.Label4.TabIndex = 62
         Me.Label4.Text = "Empresa de desarrollo"
         '
+        'cb_category
+        '
+        Me.cb_category.FormattingEnabled = True
+        Me.cb_category.Location = New System.Drawing.Point(397, 92)
+        Me.cb_category.Name = "cb_category"
+        Me.cb_category.Size = New System.Drawing.Size(278, 24)
+        Me.cb_category.TabIndex = 63
+        '
         'Form9
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(687, 417)
+        Me.Controls.Add(Me.cb_category)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtBoxED)
         Me.Controls.Add(Me.txtBoxName)
@@ -165,7 +166,6 @@ Partial Class Form9
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtBoxPrice)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txtBoxCategory)
         Me.Controls.Add(Me.Label7)
         Me.Name = "Form9"
         Me.Text = "Crear VideoJuego"
@@ -180,10 +180,10 @@ Partial Class Form9
     Friend WithEvents Label2 As Label
     Friend WithEvents txtBoxPrice As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents txtBoxCategory As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents txtBoxName As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents txtBoxED As TextBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents cb_category As ComboBox
 End Class
